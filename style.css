@@ -24,6 +24,9 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
 
 body {
@@ -32,6 +35,7 @@ body {
     font-family: var(--font-main);
     overflow-x: hidden;
     position: relative;
+    width: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
