@@ -259,7 +259,7 @@ h1, h2, h3, p, a, li, button, span {
     font-weight: 600;
     font-size: 1.25rem; /* 20px */
     text-decoration: none;
-    /* ✨ NOVO: transição aprimorada para o hover */
+    max-width: 80vw;
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, outline-color 0.3s ease;
 }
 
@@ -270,11 +270,9 @@ h1, h2, h3, p, a, li, button, span {
 .btn-primary {
     background-color: var(--primary-color);
     color: var(--dark-text);
-    /* ✨ NOVO: adiciona um outline transparente para uma transição suave */
     outline: 2px solid transparent;
 }
 
-/* ✨ NOVO: Efeito de hover criativo para o botão primário */
 .btn-primary:hover {
     background-color: transparent;
     color: var(--primary-color);
