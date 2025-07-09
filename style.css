@@ -540,17 +540,18 @@ h1, h2, h3, p, a, li, button, span {
     opacity: 0.5;
     width: 256.31px;
     height: 376.29px;
-    z-index: -1;
+    z-index: 0;
 }
 
 .shape-1 {
-    left: 85%;
-    top: 722px;
+    right: -80px;
+    top: 622px;
+    transform: rotate(-8deg);
 }
 
 .shape-2 {
-    left: -100px;
-    top: 362px;
+    left: -130px;
+    top: -80px;
     transform: rotate(-148deg);
 }
 
