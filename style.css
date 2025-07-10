@@ -14,6 +14,12 @@
     font-size: 16px;
 }
 
+::selection {
+    background: var(--primary-color); /* Fundo rosa */
+    color: var(--dark-text);          /* Texto preto */
+}
+
+
 *,
 *::before,
 *::after {
