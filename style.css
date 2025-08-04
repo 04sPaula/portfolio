@@ -39,7 +39,6 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--font-main);
-    overflow-x: hidden;
     position: relative;
     width: 100%;
     -webkit-font-smoothing: antialiased;
