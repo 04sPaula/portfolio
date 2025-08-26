@@ -290,7 +290,6 @@ h1, h2, h3, p, a, li, button, span {
     outline: 2px solid rgba(255, 115, 171, 0.75);
 }
 
-/* ✨ NOVO: Efeito de hover criativo para o botão secundário */
 .btn-secondary:hover {
     background-color: var(--primary-color);
     color: var(--dark-text);
@@ -396,6 +395,54 @@ h1, h2, h3, p, a, li, button, span {
     border-radius: 8px;
     flex-shrink: 0;
     scroll-snap-align: center;
+}
+
+/* --- Steps Section --- */
+.steps-container {
+    display: flex;
+    max-width: 1408px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.step-container {
+    display: flex;
+    max-width: 400px;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.step-number {
+    color: #FF95BF;
+    text-align: center;
+    font-family: "Instrument Serif";
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1.92px;
+}
+
+.step-title {
+    color: #FAFAFA;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px; 
+    font-weight: 700;
+    letter-spacing: 0.66px;
+    text-transform: uppercase;
+}
+
+.step-text {
+    color: #FAFAFA;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
 }
 
 /* --- Testimonials Section --- */
@@ -739,5 +786,23 @@ h1, h2, h3, p, a, li, button, span {
     }
     .projects-carousel {
         padding: 1.5rem;
+    }
+
+    /* --- Steps Section --- */
+    .steps-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .step-container {
+        display: flex;
+        max-width: 400px;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        flex-shrink: 0;
     }
 }
