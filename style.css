@@ -33,6 +33,7 @@ html {
     width: 100%;
     overflow-x: hidden;
     position: relative;
+    cursor: none;
 }
 
 body {
@@ -50,6 +51,10 @@ body {
     max-width: 1408px;
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+a, button {
+    cursor: none;
 }
 
 /* --- Accessibility --- */
@@ -259,7 +264,6 @@ h1, h2, h3, p, a, li, button, span {
     height: 4rem; /* 64px */
     border-radius: 8px;
     border: none;
-    cursor: pointer;
     font-family: var(--font-main);
     font-weight: 600;
     font-size: 1.25rem; /* 20px */
@@ -416,7 +420,7 @@ h1, h2, h3, p, a, li, button, span {
 }
 
 .step-number {
-    color: #FF95BF;
+    color: var(--primary-color);
     text-align: center;
     font-family: "Instrument Serif";
     font-size: 64px;
@@ -605,6 +609,44 @@ h1, h2, h3, p, a, li, button, span {
     left: -130px;
     top: -80px;
     transform: rotate(-148deg);
+}
+
+.cursor-dot {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+    mix-blend-mode: difference; 
+    transition: transform 0.2s ease-in-out; 
+}
+
+.cursor-outline {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 50%;
+    z-index: 9998;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transition: all 0.3s ease-out; 
+}
+
+.cursor-outline.hover {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+.cursor-dot.hover {
+    transform: translate(-50%, -50%) scale(0.9);
 }
 
 /* --- Animations --- */

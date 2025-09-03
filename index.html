@@ -527,6 +527,9 @@
         </div>
     </footer>
 
+    <div class="cursor-outline"></div>
+    <div class="cursor-dot"></div>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const animatedElements = document.querySelectorAll('.animate-on-scroll');
@@ -565,6 +568,59 @@
 
                 carousel.style.setProperty('--scroll-width', `${scrollWidth}px`);
             }
+                        const cursorDot = document.querySelector('.cursor-dot');
+            const cursorOutline = document.querySelector('.cursor-outline');
+
+            let mouseX = 0;
+            let mouseY = 0;
+
+            let dotX = 0;
+            let dotY = 0;
+
+            let outlineX = 0;
+            let outlineY = 0;
+
+            const easeDot = 0.15; 
+            const easeOutline = 0.12;
+
+            window.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+
+            function animateCursor() {
+                dotX += (mouseX - dotX) * easeDot;
+                dotY += (mouseY - dotY) * easeDot;
+
+                outlineX += (mouseX - outlineX) * easeOutline;
+                outlineY += (mouseY - outlineY) * easeOutline;
+
+                // Aplica a posição aos elementos do cursor
+                cursorDot.style.left = `${dotX}px`;
+                cursorDot.style.top = `${dotY}px`;
+
+                cursorOutline.style.left = `${outlineX}px`;
+                cursorOutline.style.top = `${outlineY}px`;
+
+                // Continua o loop na próxima frame
+                requestAnimationFrame(animateCursor);
+            }
+
+            animateCursor();
+
+            const interactiveElements = document.querySelectorAll('a, button');
+
+            interactiveElements.forEach(el => {
+                el.addEventListener('mouseover', () => {
+                    cursorDot.classList.add('hover');
+                    cursorOutline.classList.add('hover');
+                });
+                el.addEventListener('mouseout', () => {
+                    cursorDot.classList.remove('hover');
+                    cursorOutline.classList.remove('hover');
+                });
+            });
+
         });
     </script>
 </body>
