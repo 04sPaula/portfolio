@@ -70,7 +70,7 @@ button:focus-visible,
 /* --- Typography --- */
 h1, h2, h3, p, a, li, button, span {
     word-wrap: break-word;
-    hyphens: auto;
+    hyphens: none;
 }
 
 .section-title {
@@ -131,6 +131,9 @@ h1, h2, h3, p, a, li, button, span {
     font-style: italic;
     font-size: 1.75rem; /* 28px */
     text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--primary-color);
 }
 
 .nav-link:not(.active) {
