@@ -121,6 +121,7 @@
 .process-step {
     padding-bottom: 2.5rem;
     border-bottom: 1px solid rgba(163, 163, 163, 0.3);
+    min-width: 0;
 }
 
 .process-step:last-child {
@@ -145,8 +146,16 @@
 .process-step p {
     font-size: 1.125rem;
     line-height: 1.7;
-    max-width: 75ch;
+    max-width: 100%;
     opacity: 0.9;
+}
+
+.process-img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
 }
 
 /* --- Seção de Resultados --- */

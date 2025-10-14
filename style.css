@@ -599,7 +599,7 @@ h1, h2, h3, p, a, li, button, span {
     opacity: 0.5;
     width: 256.31px;
     height: 376.29px;
-    z-index: 0;
+    z-index: -1;
 }
 
 .shape-1 {
