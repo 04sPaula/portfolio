@@ -61,7 +61,7 @@
     <header class="main-header">
         <a href="index-pt.html" class="logo">PAULA ALVES</a>
 
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-controls="main-nav-wrapper" >
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-controls="main-nav-wrapper">
         <label for="menu-toggle" class="menu-hamburger" aria-label="Open menu">
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
@@ -213,10 +213,9 @@
         <section class="projects-section animate-on-scroll" aria-labelledby="projects-section-title">
             <h2 id="projects-section-title" class="section-title">My last projects</h2>
             <div class="projects-carousel" role="region" aria-label="Carousel of recent projects" tabindex="0">
-                <a href="https://www.behance.net/gallery/229024011/eCha-housewarming-registry-system" target="_blank"
-                    rel="noopener noreferrer"><img src="assets/1.jpg"
+                <a href="projects/eCha/echa.html" target="_blank" rel="noopener noreferrer"><img src="assets/1.jpg"
                         alt="eCha project, housewarming registry management system"></a>
-                <a href="https://www.behance.net/gallery/232416151/Lost-and-Found-Web-System" target="_blank"
+                <a href="projects/SIP/sip.html" target="_blank"
                     rel="noopener noreferrer"><img src="assets/6.jpg" alt="SIP Project, Lost and found web system"></a>
                 <a href="https://www.behance.net/gallery/229022089/Spacelaxy-Tech-courses-and-community" target="_blank"
                     rel="noopener noreferrer"><img src="assets/3.jpg"
@@ -531,6 +530,13 @@
     <div class="cursor-dot"></div>
 
     <script src="script.js" defer></script>
+    <script>
+        if (window.matchMedia('(min-width: 1024px)').matches) {
+            var script = document.createElement('script');
+            script.src = 'script-desktop.js';
+            document.body.appendChild(script);
+        }
+    </script>
 </body>
 
 </html>

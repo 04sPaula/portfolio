@@ -254,8 +254,8 @@
                         the product from competitors and strengthened its identity.</p>
                     <a class="btn btn-primary"
                         href="https://www.figma.com/proto/Jy6hmLXPCZq1elOJTbvTKc/main?t=XFAI7xnJcsknF40j-1"
-                        target="_blank" rel="noopener noreferrer">
-                        Ver protótipo no Figma
+                        target="_blank" rel="noopener noreferrer" style="margin-top: 16px;">
+                        View prototype on Figma
                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
                             aria-hidden="true">
                             <path d="M8.16663 8.16669H19.8333M19.8333 8.16669V19.8334M19.8333 8.16669L8.16663 19.8334"
@@ -481,6 +481,13 @@
     <div class="cursor-dot"></div>
 
     <script src="../../script.js" defer></script>
+    <script>
+        if (window.matchMedia('(min-width: 1024px)').matches) {
+            var script = document.createElement('script');
+            script.src = '../../script-desktop.js';
+            document.body.appendChild(script);
+        }
+    </script>
 </body>
 
 </html>

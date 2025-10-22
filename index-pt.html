@@ -213,7 +213,7 @@
                 <a href="projects/eCha/echa-pt.html"
                     target="_blank"><img src="assets/1.jpg"
                         alt="Projeto eCha, sistema de gerenciamento de lista de chá de casa nova"></a>
-                <a href="https://www.behance.net/gallery/232339365/Sistema-de-Itens-Perdidos" target="_blank"
+                <a href="projects/SIP/sip-pt.html" target="_blank"
                     rel="noopener noreferrer"><img src="assets/6.jpg"
                         alt="Projeto SIP, sistema de achados e perdidos"></a>
                 <a target="_blank" rel="noopener noreferrer"
@@ -531,6 +531,13 @@
     <div class="cursor-dot"></div>
 
     <script src="script.js" defer></script>
+    <script>
+        if (window.matchMedia('(min-width: 1024px)').matches) {
+            var script = document.createElement('script');
+            script.src = 'script-desktop.js';
+            document.body.appendChild(script);
+        }
+    </script>
 </body>
 
 </html>
