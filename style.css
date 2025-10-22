@@ -615,6 +615,7 @@ h1, h2, h3, p, a, li, button, span {
 }
 
 .cursor-dot {
+    display: none;
     width: 20px;
     height: 20px;
     background-color: white;
@@ -630,6 +631,7 @@ h1, h2, h3, p, a, li, button, span {
 }
 
 .cursor-outline {
+    display: none;
     width: 40px;
     height: 40px;
     border: 1px solid white;
@@ -713,6 +715,12 @@ h1, h2, h3, p, a, li, button, span {
 
 
 /* --- Responsive Adjustments --- */
+@media (min-width: 1024px) {
+    .cursor-dot, .cursor-outline {
+        display: block;
+    }
+}
+
 @media (max-width: 1200px) {
     .main-header {
         padding: 1.5rem 3rem;
