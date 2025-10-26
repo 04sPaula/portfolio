@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://04spaula.github.io/portfolio/</loc>
+    <lastmod>2025-10-26</lastmod> <changefreq>monthly</changefreq> <priority>1.0</priority> </url>
+
+  <url>
+    <loc>https://04spaula.github.io/portfolio/index-pt.html</loc>
+    <lastmod>2025-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://04spaula.github.io/portfolio/projects/eCha/echa.html</loc>
+    <lastmod>2025-10-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://04spaula.github.io/portfolio/projects/eCha/echa-pt.html</loc>
+    <lastmod>2025-10-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://04spaula.github.io/portfolio/projects/SIP/sip.html</loc>
+    <lastmod>2025-10-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://04spaula.github.io/portfolio/projects/SIP/sip-pt.html</loc>
+    <lastmod>2025-10-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
