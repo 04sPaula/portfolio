@@ -164,6 +164,15 @@ h1, h2, h3, p, a, li, button, span {
     color: var(--primary-color);
 }
 
+.error-code {
+    font-size: 16rem;
+    font-style: italic;
+    background: linear-gradient( #FF95BF 6.48%, #29181F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 /* --- Hamburger Menu (Mobile Navigation) --- */
 .menu-toggle {
     display: none;
